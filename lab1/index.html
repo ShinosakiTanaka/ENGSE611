@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>เว็บไซต์แนะนำตัวของฉัน</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto 40px;
+            padding: 0 16px;
+        }
+
+        header {
+            background: #4a6cf7;
+            color: white;
+            padding: 20px 16px;
+        }
+
+        header h1 {
+            margin: 0 0 4px 0;
+        }
+
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 16px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a6cf7;
+            margin-right: 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-top: 24px;
+            background: #ffffff;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        img {
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        caption {
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        form label {
+            display: block;
+            margin-top: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 6px 8px;
+            box-sizing: border-box;
+            margin-top: 4px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            border: none;
+            background: #4a6cf7;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3653c9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 16px;
+            background: #ffffff;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ส่วนหัวเว็บไซต์ -->
+<header>
+    <h1>ชื่อ จักรพงศ์ หมื่นไชยศรี</h1>
+    <p>นักศึกษาสาขาวิศวกรรมซอฟต์แวร์</p>
+    <p>รหัสนักศึกษา: 68543210003-8</p>
+</header>
+
+<!-- เมนูนำทาง -->
+<nav>
+    <a href="#about">เกี่ยวกับฉัน</a> |
+    <a href="#skills">ทักษะ</a> |
+    <a href="#contact">ติดต่อ</a>
+</nav>
+
+<!-- เนื้อหาหลัก -->
+<main>
+
+    <!-- แนะนำตัว -->
+    <section id="about">
+        <h2>เกี่ยวกับฉัน</h2>
+        <p>ผมเป็นนักศึกษาที่สนใจด้านการเขียนโปรแกรม และการพัฒนาเว็บไซต์</p>
+
+        <h2>งานอดิเรก</h2>
+        <p>เล่นเกม เขียนโค้ด และศึกษาเทคโนโลยีใหม่ ๆ</p>
+
+        <!-- รูปภาพ -->
+        <img src="me.jpg.jpg" alt="รูปโปรไฟล์ของฉัน" width ="200">
+    </section>
+
+    <!-- ทักษะ -->
+    <section id="skills">
+        <h2>ทักษะของฉัน</h2>
+
+        <!-- รายการแบบ List -->
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <!-- ตาราง -->
+        <table>
+            <caption>ตารางแสดงตารางเรียน</caption>
+            <tr>
+                <th>วัน</th>
+                <th colspan="2">วิชา</th>
+            </tr>
+            <tr>
+                <td rowspan="2">จันทร์</td>
+                <td>HTML</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td colspan="2">JavaScript</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- ฟอร์มติดต่อ -->
+    <section id="contact">
+        <h2>ติดต่อฉัน</h2>
+
+        <form>
+            <label>ชื่อ:</label>
+            <input type="text">
+
+            <label>อีเมล:</label>
+            <input type="email">
+
+            <label>ข้อความ:</label>
+            <textarea></textarea>
+
+            <button type="submit">ส่งข้อความ</button>
+        </form>
+
+        <!-- ลิงก์โซเชียล -->
+        <p style="margin-top: 10px;">
+            <a href="https://www.facebook.com/jakkapong.meunchaisri" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/fu_hua.s/" target="_blank">Instagram</a>
+        </p>
+
+    </section>
+
+</main>
+
+<!-- ส่วนท้ายเว็บ -->
+<footer>
+    <p>© 2025 เว็บไซต์แนะนำตัวของฉัน</p>
+</footer>
+
+<!-- คอมเมนต์: ไฟล์นี้ใช้สำหรับส่งงานวิชา HTML -->
+<!-- คอมเมนต์: ผู้จัดทำ: จักรพงษ์ -->
+
+</body>
+</html>
