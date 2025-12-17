@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>Semantic HTML</title>
+<meta charset="UTF-8">
+<title>สมัครสมาชิก</title>
+
+<style>
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f2f5;
+  font-family: Arial;
+}
+
+.container {
+  background: white;
+  width: 360px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  font-size: 13px;
+  color: gray;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+.inline {
+  display: flex;
+  gap: 8px;
+}
+
+.gender {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.gender label {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.gender input {
+  width: auto;
+}
+
+button {
+  background: #2d7a1f;
+  color: white;
+  border: none;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+</style>
 </head>
+
 <body>
+
+<div class="container">
 
 <header>
   <h1>สมัคร</h1>
@@ -12,48 +87,106 @@
 </header>
 
 <form>
-            <label>ชื่อ:</label>
-            <input type="name">
 
-            <label>นามสกุล:</label>
-            <input type="lastname">
-            
+  <div class="inline">
+    <input type="text" placeholder="ชื่อ">
+    <input type="text" placeholder="นามสกุล">
+  </div>
 
-            
+  <input type="text" placeholder="หมายเลขโทรศัพท์มือถือหรืออีเมล">
+  <input type="password" placeholder="รหัสผ่านใหม่">
+
+  <label>วันเกิด</label>
+  <div class="inline">
+    
+    <select>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+      <option>13</option>
+      <option>14</option>
+      <option>15</option>
+      <option>16</option>
+      <option>17</option>
+      <option selected>18</option>
+      <option>19</option>
+      <option>20</option>
+      <option>21</option>
+      <option>22</option>
+      <option>23</option>
+      <option>24</option>
+      <option>25</option>
+      <option>26</option>
+      <option>27</option>
+      <option>28</option>
+      <option>29</option>
+      <option>30</option>
+      <option>31</option>
+    </select>
+
+    
+    <select>
+      <option>ม.ค.</option>
+      <option>ก.พ.</option>
+      <option selected>มี.ค.</option>
+      <option>เม.ย.</option>
+      <option>พ.ค.</option>
+      <option>มิ.ย.</option>
+      <option>ก.ค.</option>
+      <option>ส.ค.</option>
+      <option>ก.ย.</option>
+      <option>ต.ค.</option>
+      <option>พ.ย.</option>
+      <option>ธ.ค.</option>
+    </select>
+
+    
+    <select>
+      <option>2000</option>
+      <option>2001</option>
+      <option>2002</option>
+      <option>2003</option>
+      <option>2004</option>
+      <option selected>2005</option>
+      <option>2006</option>
+      <option>2007</option>
+      <option>2008</option>
+      <option>2009</option>
+      <option>2010</option>
+    </select>
+  </div>
+
+  <label>เพศ</label>
+  <div class="gender">
+    <label>
+      หญิง
+      <input type="radio" name="gender" value="female">
+    </label>
+    <label>
+      ชาย
+      <input type="radio" name="gender" value="male">
+    </label>
+  </div>
+
+  <p>
+    เมื่อสมัครแสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และนโยบายคุกกี้ของเรา
+    คุณอาจได้รับการแจ้งเตือน SMS จากเราและสามารถเลือกไม่รับได้ในภายหลัง
+  </p>
+
+  <button type="submit">สมัคร</button>
+
 </form>
 
-<form>
-
-
-    <label>หมายเลขโทรศัพท์:</label>
-            <input type="phone">
-
-
-            <label>รหัสผ่านใหม่:</label>
-            <input type="password">
-            
-</form>
-
-<tr>
-<th>วันเกิด</th>
-    <td rowspan="2">14</td>
-    <td rowspan="2">ก.ย.</td>
-    <td rowspan="2">2020</td>
-</tr>
-<tr>
-    <th>เพศ</th>
-    <button type="submit">หญิง</button>
-    <button type="submit">ชาย</button>
-</tr>
-
-<p>
-    เมื่อสมัครแสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และนโยบายคุกกี้ของเรา 
-    คุณอาจได้รับการแจ้งเตือน sms จากเราและสามารถเลือกไม่รับได้ในภายหลัง
-</p>
-
-<form>
-    <button type="submit">สมัคร</button>
-</form>
+</div>
 
 </body>
 </html>
