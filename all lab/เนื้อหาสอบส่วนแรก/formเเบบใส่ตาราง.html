@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form ในรูปแบบตาราง</title>
+</head>
+
+<body>
+
+  <h1>ข้อมูลผู้ใช้ (Form + Table)</h1>
+
+  <form action="#" method="post">
+
+    <table border="1" cellpadding="10">
+
+      <tr>
+        <th colspan="2">แบบฟอร์มข้อมูลผู้ใช้</th>
+      </tr>
+
+      <!-- แถวที่ 1: ชื่อ -->
+      <tr>
+        <td>ชื่อ</td>
+        <td>
+          <input type="text" name="NAME">
+        </td>
+      </tr>
+
+      <!-- แถวที่ 2: เพศ -->
+      <tr>
+        <td>เพศ</td>
+        <td>
+          <input type="radio" name="GENDER" value="MALE"> ชาย
+          <input type="radio" name="GENDER" value="FEMALE"> หญิง
+        </td>
+      </tr>
+
+      <!-- แถวที่ 3: Email -->
+      <tr>
+        <td>Email</td>
+        <td>
+          <input type="email" name="EMAIL">
+        </td>
+      </tr>
+
+      <!-- แถวที่ 4: งานอดิเรก -->
+      <tr>
+        <td>งานอดิเรก</td>
+        <td>
+          <input type="checkbox" name="HOBBY" value="READ"> อ่านหนังสือ
+          <input type="checkbox" name="HOBBY" value="SPORT"> กีฬา
+        </td>
+      </tr>
+
+      <!-- แถวที่ 5: User -->
+      <tr>
+        <td>User</td>
+        <td>
+          <input type="text" name="USER">
+        </td>
+      </tr>
+
+      <!-- แถวที่ 6: Password -->
+      <tr>
+        <td>Password</td>
+        <td>
+          <input type="password" name="PASSWORD">
+        </td>
+      </tr>
+
+      <!-- แถวที่ 7: จังหวัด -->
+      <tr>
+        <td>จังหวัด</td>
+        <td>
+          <select name="PROVINCE">
+            <option value="">เลือกจังหวัด</option>
+            <option value="CHIANGMAI">เชียงใหม่</option>
+            <option value="LAMPHUN">ลำพูน</option>
+            <option value="BANGKOK">กรุงเทพฯ</option>
+          </select>
+        </td>
+      </tr>
+
+      <!-- แถวปุ่ม -->
+      <tr>
+        <td colspan="2" align="center">
+          <button type="submit">บันทึกข้อมูล</button>
+        </td>
+      </tr>
+
+    </table>
+
+  </form>
+
+</body>
+
+</html>

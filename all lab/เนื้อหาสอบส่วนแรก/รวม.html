@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เว็บไซต์แรกของฉัน</title>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>เว็บไซต์แนะนำตัว</h1>
+    <nav>
+      <a href="#about">เกี่ยวกับฉัน</a> |
+      <a href="#skill">ทักษะ</a> |
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- SECTION ABOUT -->
+    <section id="about">
+      <h2>เกี่ยวกับฉัน</h2>
+
+      <p>สวัสดีครับ ผมชื่อ <strong>Jakkapong</strong></p>
+      <p>กำลังเรียนวิชา <em>Modern Web Technology Development</em></p>
+      <p>กำลังศึกษา <mark>HTML5</mark> เพื่อพัฒนาเว็บไซต์</p>
+      <p>บรรทัดแรก<br>บรรทัดที่สอง</p>
+
+      <!-- รูปภาพ -->
+      <img src="https://via.placeholder.com/200"
+           alt="รูปโปรไฟล์ตัวอย่าง"
+           width="200"
+           height="200"
+           title="รูปโปรไฟล์">
+
+    </section>
+
+    <!-- SECTION LIST -->
+    <section id="skill">
+      <h2>ทักษะที่กำลังเรียน</h2>
+
+      <!-- Unordered List -->
+      <h3>รายการแบบไม่เรียงลำดับ</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <!-- Ordered List -->
+      <h3>ขั้นตอนการทำเว็บไซต์</h3>
+      <ol>
+        <li>เตรียมไฟล์ HTML</li>
+        <li>เขียนโครงสร้างพื้นฐาน</li>
+        <li>เปิดดูในเบราว์เซอร์</li>
+      </ol>
+
+      <!-- Description List -->
+      <h3>คำอธิบายคำศัพท์</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>ภาษาสำหรับสร้างโครงสร้างเว็บเพจ</dd>
+
+        <dt>CSS</dt>
+        <dd>ภาษาสำหรับตกแต่งรูปแบบเว็บเพจ</dd>
+      </dl>
+    </section>
+
+    <!-- SECTION TABLE -->
+    <section>
+      <h2>ตารางตัวอย่าง</h2>
+
+      <table border="1" width="100%">
+        <caption>ตารางคะแนน</caption>
+
+        <tr>
+          <th>ชื่อ</th>
+          <th>วิชา</th>
+          <th>คะแนน</th>
+        </tr>
+
+        <tr>
+          <td rowspan="2">สมชาย</td>
+          <td>HTML</td>
+          <td>85</td>
+        </tr>
+
+        <tr>
+          <td>CSS</td>
+          <td>80</td>
+        </tr>
+
+        <tr>
+          <td colspan="2">ค่าเฉลี่ย</td>
+          <td>82.5</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- SECTION FORM -->
+    <section id="contact">
+      <h2>ติดต่อฉัน</h2>
+
+      <form action="#" method="post">
+
+        <label>ชื่อ:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label>อีเมล:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>รหัสผ่าน:</label><br>
+        <input type="password" name="password"><br><br>
+
+        <label>เพศ:</label><br>
+        <input type="radio" name="gender" value="male"> ชาย
+        <input type="radio" name="gender" value="female"> หญิง
+        <br><br>
+
+        <label>งานอดิเรก:</label><br>
+        <input type="checkbox" name="hobby" value="game"> เล่นเกม
+        <input type="checkbox" name="hobby" value="music"> ฟังเพลง
+        <br><br>
+
+        <label>คณะ:</label><br>
+        <select name="faculty">
+          <option>วิศวกรรม</option>
+          <option>วิทยาศาสตร์</option>
+          <option>บริหารธุรกิจ</option>
+        </select>
+        <br><br>
+
+        <label>ข้อความเพิ่มเติม:</label><br>
+        <textarea name="message" rows="4" cols="40"></textarea>
+        <br><br>
+
+        <button type="submit">ส่งข้อมูล</button>
+
+      </form>
+    </section>
+
+    <!-- SECTION LINK -->
+    <section>
+      <h2>ลิงก์โซเชียล</h2>
+
+      <p>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a><br>
+        <a href="https://www.google.com" target="_blank">Google</a><br>
+        <a href="mailto:info@example.com">ส่งอีเมล</a><br>
+        <a href="tel:0812345678">โทรศัพท์</a>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>ลิขสิทธิ์ © 2026 Jakkapong</p>
+  </footer>
+
+  <!-- คอมเมนต์ตัวอย่าง -->
+  <!-- ไฟล์นี้ใช้สำหรับฝึกพื้นฐาน HTML5 -->
+
+</body>
+</html>
